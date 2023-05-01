@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+
+
+.bg-image{
+    position: relative;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url(/images/management2.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.bg-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+.bg-image  h3, p, button {
+	margin: 0;
+  }
+
+.bg-image h3{
+
+	width: 60%;
+	height: auto;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 52px;
+	margin-bottom: 10px;
+	color: black;
+
+  }
+  .bg-image p{
+
+	width: 50%;
+	height: auto;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 18px;
+
+  }
+
+  .bg-image a{
+	margin-top: 40px;
+  }
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 50px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.container a button{
+	 display: block;
+     margin: auto;
+	 margin-top: 100px;
+	 margin-bottom: 20px;
+}
+.container a{
+  text-decoration: none;
+}
+
+.container h1{
+	margin-bottom: 50px;
+  }
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #007bff;
+	color: #fff;
+
+}
+
+tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
