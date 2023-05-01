@@ -1,3 +1,33 @@
+<?php
+// Connect to database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "fcms";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Count the number of items
+$sql = "SELECT COUNT(*) AS count FROM trainers";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$count = $row['count'];
+
+$sql = "SELECT AVG(salary) AS salary FROM trainers";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$avg = $row['salary'];
+
+mysqli_close($conn);
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +41,7 @@
 <body>
     <section>
         <div class="bg-image">
-          
+
 
             <h3>"The Mastermind Behind the Glory: Real Madrid's Legendary Trainers and their Impact on the Club's Success"</h3>
 
@@ -21,11 +51,30 @@
         </div>
 
         <div class="container">
-         
+
 
 
             <h1 class="title">Trainer List</h1>
-          
+
+            <div class="aggregate">
+                <div class="totalTrainers">
+
+                    <h3>Total number of trainers working in real madrid</h3>
+                    <h2><?php echo $count; ?> </h2>
+
+
+                </div>
+
+                <div class="totalTrainers">
+
+                    <h3>Average salary of the trainers</h3>
+                    <h2><?php echo $avg; ?> </h2>
+
+
+                </div>
+            </div>
+
+
             <table>
 
                 <tr>
