@@ -47,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $joinDate = $row["join_date"];
     $endDate = $row["end_date"];
     $salary = $row["salary"];
-    
 } else if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Define variables and set to empty values
@@ -139,9 +138,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 <body>
     <div class="container">
-        <h1>Update Record</h1>
+
 
         <form method="POST">
+
+            <h1>Update Record</h1>
 
             <input type="hidden" name="id" value="<?php echo $id; ?>">
 
@@ -177,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 
             <div class="form-group">
-                <button type="submit" name="button">Submit</button>
+                <button type="submit" name="button">SAVE</button>
             </div>
         </form>
     </div>

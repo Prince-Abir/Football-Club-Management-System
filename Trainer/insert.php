@@ -150,20 +150,20 @@ $conn->close();
 
             <div class="form-group">
 
-                <label for="join_date">JOIN DATE</label>
+                <label for="join_date">JOIN DATE:</label>
                 <input type="date" id="join_date" name="join_date" placeholder="JOIN DATE" required>
             </div>
 
             <div class="form-group">
 
-                <label for="end_date">END DATE</label>
+                <label for="end_date">END DATE:</label>
                 <input type="date" id="end_date" name="end_date" placeholder="END DATE" required>
             </div>
 
 
 
             <div class="form-group">
-                <button type="submit" name="button">Submit</button>
+                <button type="submit" name="button">ADD</button>
             </div>
 
         </form>

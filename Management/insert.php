@@ -135,7 +135,7 @@ $conn->close();
 
 
             <div class="form-group">
-                <button type="submit" name="button">Submit</button>
+                <button type="submit" name="button">ADD</button>
             </div>
         </form>
     </div>

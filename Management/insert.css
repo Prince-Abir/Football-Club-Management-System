@@ -55,6 +55,8 @@ button[type="submit"] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	height: 50px;
+	width: 160px;
 	font-size: 16px;
 }
 
